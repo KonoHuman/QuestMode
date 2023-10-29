@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorJade</item>
+        <item name="colorPrimaryDark">@color/colorJadeDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Jade color -->
+    <color name="colorJade">#00A86B</color>
+    <color name="colorJadeDark">#007B4E</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- BEBAS NUEU font -->
+    <style name="BebasNeueText">
+        <item name="android:fontFamily">@font/bebas_neue</item>
+    </style>
+
+    <!-- AppBar style -->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        <item name="android:textAppearance">@style/BebasNeueText</item>
+    </style>
+
+</resources>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Quest Mode</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Paramètres</string>
+
+    <string name="menu_taches">Taches</string>
+    <string name="menu_routines">Routines</string>
+    <string name="menu_statistiques">Statistiques</string>
+    <string name="menu_login">Login</string>
+    <string name="menu_signup">SignUp</string>
+    <string name="username">KonoHuman</string>
+    <string name="user_score">74%</string>
+    <string name="hour_icon">hour icon\n</string>
+    <string name="routine_title">Routines</string>
+    <string name="not_available">Non disponible</string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_login">
+
+    <!-- Fragment de login -->
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.example.questmode.LoginFragment"
+        android:label="@string/menu_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_signupFragment"
+            app:destination="@id/nav_signup" />
+        <action
+            android:id="@+id/action_loginFragment_to_passwordManagementFragment"
+            app:destination="@id/passwordManagementFragment" />
+    </fragment>
+
+    <!-- Fragment d'inscription -->
+    <fragment
+        android:id="@+id/nav_signup"
+        android:name="com.example.questmode.SignUpFragment"
+        android:label="@string/menu_signup"
+        tools:layout="@layout/fragment_signup">
+        <action
+            android:id="@+id/action_signup_to_login"
+            app:destination="@id/nav_login" />
+    </fragment>
+
+    <!-- Tes autres fragments existants -->
+
+    <fragment
+        android:id="@+id/passwordManagementFragment"
+        android:name="com.example.questmode.PasswordManagementFragment"
+        tools:layout="@layout/fragment_password_management">
+        <!-- Add any actions or arguments here -->
+    </fragment>
+    <fragment
+        android:id="@+id/nav_taches"
+        android:name="com.example.questmode.ui.taches.TachesFragment"
+        android:label="@string/menu_taches"
+        tools:layout="@layout/fragment_taches" />
+
+    <fragment
+        android:id="@+id/nav_routines"
+        android:name="com.example.questmode.ui.routine.RoutinesFragment"
+        android:label="@string/menu_routines"
+        tools:layout="@layout/fragment_routines" />
+
+    <fragment
+        android:id="@+id/nav_statistiques"
+        android:name="com.example.questmode.ui.statistiques.StatisticsFragment"
+        android:label="@string/menu_statistiques"
+        tools:layout="@layout/fragment_statistiques" />
+
+    <fragment
+        android:id="@+id/deleteTacheFragment"
+        android:name="com.example.questmode.ui.taches.DeleteTacheFragment">
+        <argument
+            android:name="tacheId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateTacheFragment"
+        android:name="com.example.questmode.ui.taches.UpdateTacheFragment"
+        tools:layout="@layout/fragment_update_tache"> <!-- Assurez-vous que le layout est correct -->
+        <argument
+            android:name="tacheId"
+            app:argType="string"
+            app:nullable="false" />
+    </fragment>
+</navigation>

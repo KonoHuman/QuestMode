@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "322628653907",
+    "project_id": "quest-mode",
+    "storage_bucket": "quest-mode.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322628653907:android:b9a39e33dfd38c571007a6",
+        "android_client_info": {
+          "package_name": "com.example.questmode"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAzlHbs6z-VBcwiTNPXxm_xDgdjGYYaGjw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
